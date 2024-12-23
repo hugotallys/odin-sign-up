@@ -9,6 +9,8 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *,
@@ -37,6 +39,11 @@ ul {
   list-style: none;
 }
 
+input,
+select {
+  outline: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -46,6 +53,7 @@ html,
 body {
   height: 100%;
   display: flex;
+  padding: 0px 32px;
 }
 
 .side-panel {
@@ -53,6 +61,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+}
+
+.right-panel {
+  flex: 2;
+  background-color: #f8f9fa;
 }
 
 .side-panel img {
@@ -90,4 +104,82 @@ body {
   font-family: NorseBold, serif;
   color: white;
   font-size: 84px;
+}
+
+.header {
+  padding: 128px 64px 54px 32px;
+}
+
+.header p {
+  font-weight: 500;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-title {
+  padding: 24px 32px;
+  background-color: white;
+}
+
+.form-inputs {
+  padding-left: 32px;
+  padding-right: 200px;
+  padding-bottom: 24px;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  gap: 16px;
+  box-shadow: 0 5px 3px -3px gray;
+}
+
+.form-col {
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.form-row label {
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+
+.form-row input {
+  border-radius: 5px;
+  height: 2em;
+  padding-left: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.form-row input:focus {
+  border: 2px solid #174bd5;
+}
+
+.form-row input:invalid {
+  border: 2px solid #ca8180;
+}
+
+form button {
+  margin: 24px 32px;
+  padding: 12px 36px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #596d47;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 8px 36px;
+  font-size: small;
 }
